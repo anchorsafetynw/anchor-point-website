@@ -15,6 +15,7 @@ export default function BucketTruckPage() {
       ]}
       reservationType="4-hour reservation window. Available on-site across the PNW."
       bookingSlug="bucket-truck"
+      heroImage="/images/pages/bucket-truck.jpg"
     />
   );
 }

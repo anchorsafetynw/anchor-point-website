@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useLang } from '@/lib/LanguageContext';
 import CTASection from '@/components/CTASection';
 
@@ -17,11 +18,16 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="relative bg-gray-950 min-h-[90vh] flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950" />
-        <div className="absolute inset-0 opacity-5" style={{
-          backgroundImage: 'repeating-linear-gradient(45deg, #C2410C 0, #C2410C 1px, transparent 0, transparent 50%)',
-          backgroundSize: '20px 20px',
-        }} />
+        <div className="absolute inset-0 overflow-hidden">
+          <Image
+            src="/images/pages/hero.jpg"
+            alt="Forklift operator in warehouse"
+            fill
+            className="object-cover opacity-25"
+            priority
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/80 to-gray-950/40" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="max-w-3xl">
             <div className="inline-block bg-[#C2410C]/20 border border-[#C2410C]/30 text-[#C2410C] text-sm font-semibold px-4 py-1.5 rounded-full mb-6 tracking-wide uppercase">

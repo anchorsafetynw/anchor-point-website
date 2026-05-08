@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import CTASection from './CTASection';
 import { useLang } from '@/lib/LanguageContext';
 
@@ -12,6 +13,7 @@ interface ServicePageLayoutProps {
   reservationType?: string;
   comingSoon?: boolean;
   bookingSlug?: string;
+  heroImage?: string;
 }
 
 export default function ServicePageLayout({
@@ -22,14 +24,20 @@ export default function ServicePageLayout({
   reservationType,
   comingSoon,
   bookingSlug,
+  heroImage,
 }: ServicePageLayoutProps) {
   const { t } = useLang();
 
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gray-950 py-24 border-b border-gray-800">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 opacity-80" />
+      <section className="relative bg-gray-950 py-24 border-b border-gray-800 overflow-hidden">
+        {heroImage && (
+          <div className="absolute inset-0">
+            <Image src={heroImage} alt={title} fill className="object-cover opacity-20" priority />
+          </div>
+        )}
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/85 to-gray-950/50" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-[#C2410C] text-sm font-semibold uppercase tracking-widest mb-3">
             OSHA-Compliant Training

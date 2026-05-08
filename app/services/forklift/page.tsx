@@ -15,6 +15,7 @@ export default function ForkliftPage() {
       ]}
       reservationType="4-hour reservation window. Available on-site PNW or at our locations."
       bookingSlug="forklift"
+      heroImage="/images/pages/forklift.jpg"
     />
   );
 }

@@ -15,6 +15,7 @@ export default function WheelLoaderPage() {
       ]}
       reservationType="4-hour reservation window. Available on-site across the PNW."
       bookingSlug="wheel-loader"
+      heroImage="/images/pages/wheel-loader.jpg"
     />
   );
 }

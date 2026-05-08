@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import CTASection from '@/components/CTASection';
 
 const locations = [
@@ -36,8 +37,12 @@ const serviceAreas = [
 export default function LocationsPage() {
   return (
     <>
-      <section className="bg-gray-950 py-20 border-b border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gray-950 py-20 border-b border-gray-800 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image src="/images/pages/locations.jpg" alt="Pacific Northwest aerial view" fill className="object-cover opacity-20" priority />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/85 to-gray-950/50" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-[#C2410C] text-sm font-semibold uppercase tracking-widest mb-4">Training Locations</div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Where We Train</h1>
           <p className="text-gray-400 text-xl max-w-2xl">

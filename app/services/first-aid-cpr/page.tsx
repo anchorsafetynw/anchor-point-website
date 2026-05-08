@@ -15,6 +15,7 @@ export default function FirstAidCPRPage() {
       ]}
       comingSoon={true}
       bookingSlug="first-aid-cpr"
+      heroImage="/images/pages/first-aid.jpg"
     />
   );
 }

@@ -15,6 +15,7 @@ export default function FallProtectionPage() {
       ]}
       comingSoon={true}
       bookingSlug="fall-protection"
+      heroImage="/images/pages/fall-protection.jpg"
     />
   );
 }

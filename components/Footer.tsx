@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useLang } from '@/lib/LanguageContext';
 
 export default function Footer() {
@@ -12,8 +13,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="text-[#C2410C] font-bold text-xl tracking-wide mb-1">ANCHOR POINT</div>
-            <div className="text-gray-500 text-sm tracking-widest uppercase mb-3">Safety Training</div>
+            <Image
+              src="/images/logo.png"
+              alt="Anchor Point Safety Training"
+              width={180}
+              height={58}
+              className="h-12 w-auto mb-3"
+            />
             <p className="text-gray-400 text-sm">{t.footer.tagline}</p>
           </div>
 

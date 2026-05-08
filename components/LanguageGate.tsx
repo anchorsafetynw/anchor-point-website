@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useLang } from '@/lib/LanguageContext';
 
 export default function LanguageGate() {
@@ -10,9 +11,15 @@ export default function LanguageGate() {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-950">
       <div className="text-center px-8 max-w-md">
-        <div className="mb-8">
-          <div className="text-[#C2410C] font-bold text-2xl tracking-wide mb-1">ANCHOR POINT</div>
-          <div className="text-white text-sm tracking-widest uppercase">Safety Training</div>
+        <div className="mb-8 flex justify-center">
+          <Image
+            src="/images/logo.png"
+            alt="Anchor Point Safety Training"
+            width={220}
+            height={72}
+            className="h-16 w-auto"
+            priority
+          />
         </div>
         <h1 className="text-white text-3xl font-bold mb-2">{t.langSelect.heading}</h1>
         <p className="text-gray-400 mb-10">{t.langSelect.sub}</p>

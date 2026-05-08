@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useLang } from '@/lib/LanguageContext';
 
 export default function Navbar() {
@@ -13,9 +14,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex flex-col leading-tight">
-            <span className="text-[#C2410C] font-bold text-lg tracking-wide">ANCHOR POINT</span>
-            <span className="text-gray-400 text-xs tracking-widest uppercase">Safety Training</span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/images/logo.png"
+              alt="Anchor Point Safety Training"
+              width={160}
+              height={52}
+              className="h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}

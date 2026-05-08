@@ -34,7 +34,7 @@ export default function ServicePageLayout({
       <section className="relative bg-gray-950 py-24 border-b border-gray-800 overflow-hidden">
         {heroImage && (
           <div className="absolute inset-0">
-            <Image src={heroImage} alt={title} fill className="object-cover opacity-20" priority />
+            <Image src={heroImage} alt={title} fill className="object-cover opacity-50" priority />
           </div>
         )}
         <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/85 to-gray-950/50" />

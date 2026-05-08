@@ -23,7 +23,7 @@ export default function Home() {
             src="/images/pages/hero.jpg"
             alt="Forklift operator in warehouse"
             fill
-            className="object-cover opacity-25"
+            className="object-cover opacity-50"
             priority
           />
         </div>

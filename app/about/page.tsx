@@ -13,7 +13,7 @@ export default function AboutPage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/85 to-gray-950/50" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-[#C2410C] text-sm font-semibold uppercase tracking-widest mb-4">About Us</div>
+          <div className="text-[#A05014] text-sm font-semibold uppercase tracking-widest mb-4">About Us</div>
           <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
             Anchored in Experience
           </h1>
@@ -24,7 +24,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Story */}
           <div className="mb-16">
-            <div className="text-[#C2410C] text-xl font-bold mb-2">20+ years real-world experience.</div>
+            <div className="text-[#A05014] text-xl font-bold mb-2">20+ years real-world experience.</div>
             <p className="text-gray-400 text-lg mb-6">Serving Portland, the Pacific Northwest, and beyond.</p>
             <div className="prose prose-invert max-w-none space-y-5 text-gray-300 text-lg leading-relaxed">
               <p>
@@ -42,20 +42,28 @@ export default function AboutPage() {
           {/* What we stand for */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             <div className="bg-gray-900 border border-gray-800 rounded-xl p-8">
-              <div className="text-[#C2410C] text-xs font-semibold uppercase tracking-widest mb-3">OSHA COMPLIANT</div>
+              <div className="text-[#A05014] text-xs font-semibold uppercase tracking-widest mb-3">OSHA COMPLIANT</div>
               <h3 className="text-white font-bold text-xl mb-3">Compliance You Can Count On</h3>
               <p className="text-gray-400">All training programs are designed to meet applicable OSHA requirements and give your team the documentation they need.</p>
             </div>
             <div className="bg-gray-900 border border-gray-800 rounded-xl p-8">
-              <div className="text-[#C2410C] text-xs font-semibold uppercase tracking-widest mb-3">BILINGUAL (EN/ES)</div>
+              <div className="text-[#A05014] text-xs font-semibold uppercase tracking-widest mb-3">BILINGUAL (EN/ES)</div>
               <h3 className="text-white font-bold text-xl mb-3">Courses in English and Spanish</h3>
               <p className="text-gray-400">Courses offered in English and Spanish so your entire crew, regardless of language, receives the same quality instruction.</p>
             </div>
           </div>
 
           {/* Instructor */}
+          <div className="relative w-full max-w-sm mx-auto mb-10 h-96 overflow-hidden rounded-xl">
+            <Image
+              src="/images/jaime.png"
+              alt="Jaime Orozco – Lead Safety Instructor"
+              fill
+              className="object-cover object-top"
+            />
+          </div>
           <div className="bg-gray-900 border border-gray-800 rounded-xl p-8 mb-16">
-            <div className="text-[#C2410C] text-xs font-semibold uppercase tracking-widest mb-4">Your Instructor</div>
+            <div className="text-[#A05014] text-xs font-semibold uppercase tracking-widest mb-4">Your Instructor</div>
             <h2 className="text-2xl font-bold text-white mb-1">Jaime Orozco</h2>
             <p className="text-gray-400 text-sm mb-6">Lead Safety Instructor & Owner, Anchor Point Safety Training</p>
             <div className="space-y-4 text-gray-300 leading-relaxed">
@@ -75,13 +83,13 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/book"
-              className="bg-[#C2410C] hover:bg-[#a33509] text-white font-bold px-8 py-4 rounded-lg transition-colors text-center text-lg"
+              className="bg-[#A05014] hover:bg-[#7A3C0A] text-white font-bold px-8 py-4 rounded-lg transition-colors text-center text-lg"
             >
               Schedule Training
             </Link>
             <Link
               href="/contact"
-              className="border-2 border-gray-700 hover:border-[#C2410C] text-white font-semibold px-8 py-4 rounded-lg transition-colors text-center text-lg"
+              className="border-2 border-gray-700 hover:border-[#A05014] text-white font-semibold px-8 py-4 rounded-lg transition-colors text-center text-lg"
             >
               Contact Us
             </Link>

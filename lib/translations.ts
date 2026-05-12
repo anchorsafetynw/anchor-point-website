@@ -98,7 +98,7 @@ export const translations = {
     },
     services: {
       title: 'Seguridad en Almacenes, Construcción y Logística',
-      subtitle: 'Capacitación de seguridad dedicada y adaptada a su entorno de trabajo. Desde operaciones de pequeñas empresas hasta operaciones de montacargas de alto volumen.',
+      subtitle: 'Capacitación de seguridad dedicada y adaptada a su entorno de trabajo. Desde personas individuales hasta operaciones de montacargas de alto volumen.',
       cta: 'Ver Servicios',
       items: [
         { name: 'PIT – Montacargas', slug: 'forklift' },
@@ -119,7 +119,7 @@ export const translations = {
         'Programación rápida para mantener los proyectos en marcha',
         'Punto de contacto consistente durante toda la programación, capacitación y certificación',
         'Empresa local del Noroeste del Pacífico',
-        'Más de 20 años de experiencia en capacitación de seguridad',
+        'Más de 20 años de experiencia en el mundo real',
       ],
     },
     cta: {

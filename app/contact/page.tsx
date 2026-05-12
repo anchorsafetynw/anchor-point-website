@@ -8,7 +8,7 @@ const trainingOptions = [
   'Bucket Truck',
   'Wheel Loader & Skid Steer',
   'First Aid CPR & AED',
-  'Fall Protection – Coming Soon',
+  'Fall Protection',
   'Train the Trainer',
 ];
 

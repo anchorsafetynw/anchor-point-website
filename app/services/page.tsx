@@ -23,7 +23,7 @@ const services = [
   {
     slug: 'bucket-truck',
     name: 'Bucket Truck',
-    description: 'OSHA & ANSI A92 compliant bucket truck certification with hands-on practical evaluation.',
+    description: 'OSHA & ANSI A92.2 compliant bucket truck certification with hands-on practical evaluation.',
     time: '4 hours',
     booking: true,
   },

@@ -86,7 +86,7 @@ export default function Home() {
           <div className="text-center flex flex-col items-center">
             <div className="inline-flex items-center gap-2 bg-[#A05014]/15 border border-[#A05014]/40 text-[#A05014] text-xs font-semibold px-4 py-2 rounded-full mb-8 tracking-widest uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[#A05014]" />
-              Pacific Northwest Safety Training
+              {t.hero.badge}
             </div>
             <h1 className="text-6xl md:text-8xl font-extrabold text-white leading-none mb-2 uppercase tracking-tight">
               {t.hero.headline1}
@@ -132,12 +132,7 @@ export default function Home() {
       <section className="bg-[#A05014] py-8 border-y border-[#7A3C0A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            {[
-              { num: '20+', label: 'Years Experience' },
-              { num: '3', label: 'Training Locations' },
-              { num: '7', label: 'Training Programs' },
-              { num: 'EN/ES', label: 'Bilingual Instruction' },
-            ].map(({ num, label }) => (
+            {t.stats.map(({ num, label }) => (
               <div key={label}>
                 <div className="text-white text-4xl md:text-5xl font-extrabold uppercase tracking-tight leading-none">{num}</div>
                 <div className="text-black text-sm font-medium mt-1 uppercase tracking-widest">{label}</div>
@@ -160,21 +155,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              {
-                icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10l9-7 9 7M12 3v7" /></svg>,
-                title: 'On-Site Training',
-                desc: 'We come to your facility or jobsite anywhere in the Pacific Northwest.',
-              },
-              {
-                icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>,
-                title: 'Qualified Instructors',
-                desc: 'Expert-led industrial safety training with 20+ years of hands-on field experience.',
-              },
-              {
-                icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>,
-                title: 'Compliance Tracking',
-                desc: 'Digital certification records and renewal reminders to keep your team current.',
-              },
+              { icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10l9-7 9 7M12 3v7" /></svg>, ...t.valueProps[0] },
+              { icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>, ...t.valueProps[1] },
+              { icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>, ...t.valueProps[2] },
             ].map(({ icon, title, desc }) => (
               <div key={title} className="bg-white rounded-2xl border border-gray-200 p-8 flex gap-5 items-start shadow-sm">
                 <div className="w-12 h-12 rounded-xl bg-[#A05014]/10 border border-[#A05014]/20 flex items-center justify-center text-[#A05014] flex-shrink-0">
@@ -194,7 +177,7 @@ export default function Home() {
       <section className="py-24 bg-gray-50" id="services">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-14">
-            <div className="text-[#A05014] text-xs font-semibold uppercase tracking-widest mb-3">Training Programs</div>
+            <div className="text-[#A05014] text-xs font-semibold uppercase tracking-widest mb-3">{t.services.label}</div>
             <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 uppercase tracking-tight mb-4">{t.services.title}</h2>
             <p className="text-gray-500 text-lg max-w-2xl">{t.services.subtitle}</p>
           </div>
@@ -228,7 +211,7 @@ export default function Home() {
                     </span>
                     {'comingSoon' in item && item.comingSoon ? (
                       <span className="text-xs bg-gray-100 group-hover:bg-white/20 group-hover:text-white text-gray-400 px-2 py-0.5 flex-shrink-0 transition-colors duration-300">
-                        Soon
+                        {t.services.comingSoon}
                       </span>
                     ) : (
                       <svg className="w-4 h-4 text-gray-300 group-hover:text-white transition-colors duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -257,7 +240,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="text-[#A05014] text-xs font-semibold uppercase tracking-widest mb-4">Why Anchor Point</div>
+              <div className="text-[#A05014] text-xs font-semibold uppercase tracking-widest mb-4">{t.whyUs.label}</div>
               <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 uppercase tracking-tight mb-10">{t.whyUs.title}</h2>
               <ul className="space-y-5 mb-10">
                 {t.whyUs.bullets.map((bullet) => (
@@ -268,17 +251,12 @@ export default function Home() {
                 ))}
               </ul>
               <div className="bg-[#A05014]/8 border-l-4 border-[#A05014] rounded-r-xl px-6 py-5">
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#A05014] mb-2">Our Mission</p>
-                <p className="text-gray-700 text-lg leading-relaxed italic">"To empower workers with the knowledge and skills to return home safely every day."</p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#A05014] mb-2">{t.whyUs.mission.label}</p>
+                <p className="text-gray-700 text-lg leading-relaxed italic">{t.whyUs.mission.quote}</p>
               </div>
             </div>
             <div className="bg-gray-50 rounded-2xl border border-gray-200 p-10 space-y-8">
-              {[
-                { num: '20+', desc: 'Years of Real-World Experience' },
-                { num: '3', desc: 'Training Locations: Tualatin, Vancouver, Eugene' },
-                { num: '2', desc: 'Languages: English & Español' },
-                { num: '7', desc: 'OSHA-Compliant Training Programs' },
-              ].map(({ num, desc }) => (
+              {t.whyUs.stats.map(({ num, desc }) => (
                 <div key={desc} className="flex items-center gap-5 border-b border-gray-200 pb-8 last:border-0 last:pb-0">
                   <span className="text-[#A05014] font-extrabold text-4xl leading-none w-16 flex-shrink-0">{num}</span>
                   <span className="text-gray-600">{desc}</span>
@@ -299,16 +277,11 @@ export default function Home() {
       <section className="py-24 bg-white border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-14">
-            <div className="text-[#A05014] text-xs font-semibold uppercase tracking-widest mb-3">Client Voices</div>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 uppercase tracking-tight">The Quiet Authority</h2>
+            <div className="text-[#A05014] text-xs font-semibold uppercase tracking-widest mb-3">{t.testimonials.label}</div>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 uppercase tracking-tight">{t.testimonials.heading}</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              { quote: "Anchor Point's training isn't just about checkboxes — they make sure our crew actually understands the 'why' behind every safety protocol.", author: 'Logistics Manager', location: 'Portland, OR' },
-              { quote: "Professional, thorough, and incredibly flexible. They came to our site on short notice and kept our project on schedule without compromising safety.", author: 'Project Superintendent', location: 'Vancouver, WA' },
-              { quote: "The bilingual instruction was a game-changer for our team. Clear, concise, and focused on real-world scenarios.", author: 'Operations Director', location: 'Eugene, OR' },
-              { quote: "The best forklift training we've had in years. They focused on our specific warehouse layout and made it immediately applicable.", author: 'Warehouse Manager', location: 'Portland, OR' },
-            ].map(({ quote, author, location }) => (
+            {t.testimonials.items.map(({ quote, author, location }) => (
               <div key={author} className="bg-gray-50 border border-gray-200 rounded-2xl p-8 flex flex-col gap-6">
                 <svg className="w-8 h-8 text-[#A05014]/30" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
@@ -328,17 +301,11 @@ export default function Home() {
       <section className="py-24 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <div className="text-[#A05014] text-xs font-semibold uppercase tracking-widest mb-3">Got Questions?</div>
-            <h2 className="text-4xl font-extrabold text-gray-900 uppercase tracking-tight">Frequently Asked Questions</h2>
+            <div className="text-[#A05014] text-xs font-semibold uppercase tracking-widest mb-3">{t.faq.label}</div>
+            <h2 className="text-4xl font-extrabold text-gray-900 uppercase tracking-tight">{t.faq.heading}</h2>
           </div>
           <div className="space-y-4">
-            {[
-              { q: 'Do you come to our jobsite?', a: 'Yes. On-site training is our specialty. We travel throughout Oregon and Washington — no need to send your crew offsite.' },
-              { q: 'Is training available in Spanish?', a: 'Absolutely. All of our programs are available in English and Spanish. Our bilingual instructors deliver the same quality and rigor in both languages.' },
-              { q: 'How quickly can you schedule training?', a: 'In most cases we can accommodate same-week scheduling. Call or submit a request and we\'ll confirm availability within 24 hours.' },
-              { q: 'Do operators receive a certification card?', a: 'Yes. Certified operators receive a card the same day as training. Digital records are also maintained for compliance tracking.' },
-              { q: 'What equipment do we need to provide?', a: 'For on-site training we use your equipment so operators are evaluated on what they actually work with. We supply all materials and documentation.' },
-            ].map(({ q, a }, i) => (
+            {t.faq.items.map(({ q, a }, i) => (
               <details key={i} className="group bg-white border border-gray-200 rounded-xl overflow-hidden">
                 <summary className="flex items-center justify-between px-6 py-5 cursor-pointer list-none">
                   <span className="font-semibold text-gray-900 pr-4">{q}</span>
@@ -359,14 +326,11 @@ export default function Home() {
       <section className="py-20 bg-white border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <div className="text-[#A05014] text-xs font-semibold uppercase tracking-widest mb-3">Coverage</div>
-            <h2 className="text-4xl font-extrabold text-gray-900 uppercase tracking-tight">We come to you — across the Pacific Northwest</h2>
+            <div className="text-[#A05014] text-xs font-semibold uppercase tracking-widest mb-3">{t.coverage.label}</div>
+            <h2 className="text-4xl font-extrabold text-gray-900 uppercase tracking-tight">{t.coverage.heading}</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
-            {[
-              'Portland Metro', 'Seattle Metro', 'Eugene Metro', 'Bend Metro',
-              'Pendleton', 'Spokane', 'Kennewick', 'Medford', 'Roseburg', 'Boise'
-            ].map((area) => (
+            {t.coverage.areas.map((area) => (
               <div key={area} className="bg-gray-50 border border-gray-200 hover:border-[#A05014] rounded-xl px-4 py-3 text-center text-sm text-gray-500 hover:text-gray-800 transition-colors">
                 {area}
               </div>

@@ -21,15 +21,29 @@ export const translations = {
       trust2: '20+ years real-world experience',
       trust3: 'English / Español',
       trust4: 'Locally owned, Pacific Northwest',
+      badge: 'Pacific Northwest Safety Training',
     },
+    stats: [
+      { num: '20+', label: 'Years Experience' },
+      { num: '3', label: 'Training Locations' },
+      { num: '7', label: 'Training Programs' },
+      { num: 'EN/ES', label: 'Bilingual Instruction' },
+    ],
     impact: {
       line1: 'One mistake changes everything.',
       line2: 'Safety training that works in the real world.',
     },
+    valueProps: [
+      { title: 'On-Site Training', desc: 'We come to your facility or jobsite anywhere in the Pacific Northwest.' },
+      { title: 'Qualified Instructors', desc: 'Expert-led industrial safety training with 20+ years of hands-on field experience.' },
+      { title: 'Compliance Tracking', desc: 'Digital certification records and renewal reminders to keep your team current.' },
+    ],
     services: {
+      label: 'Training Programs',
       title: 'Warehouse, Construction, and Logistics Safety',
       subtitle: 'Dedicated safety training tailored to your work environment. From single individuals to high-volume forklift operations.',
       cta: 'Explore Services',
+      comingSoon: 'Soon',
       items: [
         { name: 'PIT – Forklift', slug: 'forklift' },
         { name: 'MEWP – Boom Lift & Scissor Lift', slug: 'mewp' },
@@ -41,6 +55,7 @@ export const translations = {
       ],
     },
     whyUs: {
+      label: 'Why Anchor Point',
       title: 'Anchored in safety. Built on trust.',
       bullets: [
         'On-site PNW training or at one of our locations.',
@@ -51,6 +66,42 @@ export const translations = {
         'Locally owned Pacific Northwest business',
         '20+ years of real-world experience',
       ],
+      mission: {
+        label: 'Our Mission',
+        quote: '"To empower workers with the knowledge and skills to return home safely every day."',
+      },
+      stats: [
+        { num: '20+', desc: 'Years of Real-World Experience' },
+        { num: '3', desc: 'Training Locations: Tualatin, Vancouver, Eugene' },
+        { num: '2', desc: 'Languages: English & Español' },
+        { num: '7', desc: 'OSHA-Compliant Training Programs' },
+      ],
+    },
+    testimonials: {
+      label: 'Client Voices',
+      heading: 'The Quiet Authority',
+      items: [
+        { quote: "Anchor Point's training isn't just about checkboxes — they make sure our crew actually understands the 'why' behind every safety protocol.", author: 'Logistics Manager', location: 'Portland, OR' },
+        { quote: 'Professional, thorough, and incredibly flexible. They came to our site on short notice and kept our project on schedule without compromising safety.', author: 'Project Superintendent', location: 'Vancouver, WA' },
+        { quote: 'The bilingual instruction was a game-changer for our team. Clear, concise, and focused on real-world scenarios.', author: 'Operations Director', location: 'Eugene, OR' },
+        { quote: "The best forklift training we've had in years. They focused on our specific warehouse layout and made it immediately applicable.", author: 'Warehouse Manager', location: 'Portland, OR' },
+      ],
+    },
+    faq: {
+      label: 'Got Questions?',
+      heading: 'Frequently Asked Questions',
+      items: [
+        { q: 'Do you come to our jobsite?', a: 'Yes. On-site training is our specialty. We travel throughout Oregon and Washington — no need to send your crew offsite.' },
+        { q: 'Is training available in Spanish?', a: "Absolutely. All of our programs are available in English and Spanish. Our bilingual instructors deliver the same quality and rigor in both languages." },
+        { q: 'How quickly can you schedule training?', a: "In most cases we can accommodate same-week scheduling. Call or submit a request and we'll confirm availability within 24 hours." },
+        { q: 'Do operators receive a certification card?', a: 'Yes. Certified operators receive a card the same day as training. Digital records are also maintained for compliance tracking.' },
+        { q: 'What equipment do we need to provide?', a: 'For on-site training we use your equipment so operators are evaluated on what they actually work with. We supply all materials and documentation.' },
+      ],
+    },
+    coverage: {
+      label: 'Coverage',
+      heading: 'We come to you — across the Pacific Northwest',
+      areas: ['Portland Metro', 'Seattle Metro', 'Eugene Metro', 'Bend Metro', 'Pendleton', 'Spokane', 'Kennewick', 'Medford', 'Roseburg', 'Boise'],
     },
     cta: {
       primary: 'Schedule Training',
@@ -91,15 +142,29 @@ export const translations = {
       trust2: 'Más de 20 años de experiencia real',
       trust3: 'English / Español',
       trust4: 'Empresa local del Noroeste del Pacífico',
+      badge: 'Capacitación de Seguridad en el Noroeste del Pacífico',
     },
+    stats: [
+      { num: '20+', label: 'Años de Experiencia' },
+      { num: '3', label: 'Ubicaciones de Capacitación' },
+      { num: '7', label: 'Programas de Capacitación' },
+      { num: 'EN/ES', label: 'Instrucción Bilingüe' },
+    ],
     impact: {
       line1: 'Un error lo cambia todo.',
       line2: 'Capacitación de seguridad que funciona en el mundo real.',
     },
+    valueProps: [
+      { title: 'Capacitación en Sitio', desc: 'Vamos a sus instalaciones o lugar de trabajo en cualquier parte del Noroeste del Pacífico.' },
+      { title: 'Instructores Calificados', desc: 'Capacitación industrial liderada por expertos con más de 20 años de experiencia práctica en el campo.' },
+      { title: 'Seguimiento de Cumplimiento', desc: 'Registros digitales de certificación y recordatorios de renovación para mantener a su equipo actualizado.' },
+    ],
     services: {
+      label: 'Programas de Capacitación',
       title: 'Seguridad en Almacenes, Construcción y Logística',
       subtitle: 'Capacitación de seguridad dedicada y adaptada a su entorno de trabajo. Desde personas individuales hasta operaciones de montacargas de alto volumen.',
       cta: 'Ver Servicios',
+      comingSoon: 'Próximo',
       items: [
         { name: 'PIT – Montacargas', slug: 'forklift' },
         { name: 'MEWP – Plataforma Elevadora', slug: 'mewp' },
@@ -111,6 +176,7 @@ export const translations = {
       ],
     },
     whyUs: {
+      label: 'Por Qué Anchor Point',
       title: 'Anclados en la seguridad. Construidos en la confianza.',
       bullets: [
         'Capacitación en su sitio en el PNW o en una de nuestras ubicaciones.',
@@ -121,6 +187,42 @@ export const translations = {
         'Empresa local del Noroeste del Pacífico',
         'Más de 20 años de experiencia en el mundo real',
       ],
+      mission: {
+        label: 'Nuestra Misión',
+        quote: '"Empoderar a los trabajadores con el conocimiento y las habilidades para regresar a casa sanos y salvos cada día."',
+      },
+      stats: [
+        { num: '20+', desc: 'Años de Experiencia en el Mundo Real' },
+        { num: '3', desc: 'Ubicaciones: Tualatin, Vancouver, Eugene' },
+        { num: '2', desc: 'Idiomas: Inglés y Español' },
+        { num: '7', desc: 'Programas de Capacitación conforme a OSHA' },
+      ],
+    },
+    testimonials: {
+      label: 'Voces de Clientes',
+      heading: 'La Autoridad Silenciosa',
+      items: [
+        { quote: "La capacitación de Anchor Point no se trata solo de marcar casillas — se aseguran de que nuestra tripulación entienda el 'porqué' detrás de cada protocolo de seguridad.", author: 'Gerente de Logística', location: 'Portland, OR' },
+        { quote: 'Profesional, completo e increíblemente flexible. Vinieron a nuestro sitio con poco tiempo de aviso y mantuvieron nuestro proyecto en marcha sin comprometer la seguridad.', author: 'Superintendente de Proyecto', location: 'Vancouver, WA' },
+        { quote: 'La instrucción bilingüe fue un cambio de juego para nuestro equipo. Clara, concisa y enfocada en escenarios del mundo real.', author: 'Director de Operaciones', location: 'Eugene, OR' },
+        { quote: 'La mejor capacitación de montacargas que hemos tenido en años. Se enfocaron en el diseño específico de nuestro almacén y lo hicieron inmediatamente aplicable.', author: 'Gerente de Almacén', location: 'Portland, OR' },
+      ],
+    },
+    faq: {
+      label: '¿Tiene Preguntas?',
+      heading: 'Preguntas Frecuentes',
+      items: [
+        { q: '¿Vienen a nuestro lugar de trabajo?', a: 'Sí. La capacitación en sitio es nuestra especialidad. Viajamos por todo Oregón y Washington — no es necesario enviar a su equipo fuera del sitio.' },
+        { q: '¿Está disponible la capacitación en español?', a: 'Absolutamente. Todos nuestros programas están disponibles en inglés y español. Nuestros instructores bilingües ofrecen la misma calidad y rigor en ambos idiomas.' },
+        { q: '¿Con qué rapidez pueden programar la capacitación?', a: 'En la mayoría de los casos podemos acomodar la programación en la misma semana. Llame o envíe una solicitud y confirmaremos disponibilidad en 24 horas.' },
+        { q: '¿Reciben los operadores una tarjeta de certificación?', a: 'Sí. Los operadores certificados reciben una tarjeta el mismo día de la capacitación. También se mantienen registros digitales para el seguimiento de cumplimiento.' },
+        { q: '¿Qué equipo necesitamos proporcionar?', a: 'Para la capacitación en sitio usamos su equipo para que los operadores sean evaluados en lo que realmente trabajan. Nosotros proporcionamos todos los materiales y documentación.' },
+      ],
+    },
+    coverage: {
+      label: 'Cobertura',
+      heading: 'Vamos a usted — en todo el Noroeste del Pacífico',
+      areas: ['Área Metro Portland', 'Área Metro Seattle', 'Área Metro Eugene', 'Área Metro Bend', 'Pendleton', 'Spokane', 'Kennewick', 'Medford', 'Roseburg', 'Boise'],
     },
     cta: {
       primary: 'Programar Capacitación',

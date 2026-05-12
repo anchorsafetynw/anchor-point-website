@@ -15,6 +15,7 @@ interface ServicePageLayoutProps {
   hideBadge?: boolean;
   bookingSlug?: string;
   heroImage?: string;
+  imagePosition?: string;
 }
 
 export default function ServicePageLayout({
@@ -27,6 +28,7 @@ export default function ServicePageLayout({
   hideBadge,
   bookingSlug,
   heroImage,
+  imagePosition = 'object-center',
 }: ServicePageLayoutProps) {
   const { t } = useLang();
 
@@ -36,19 +38,19 @@ export default function ServicePageLayout({
       <section className="relative bg-gray-950 py-28 border-b border-gray-800 overflow-hidden">
         {heroImage && (
           <div className="absolute inset-0">
-            <Image src={heroImage} alt={title} fill className="object-cover opacity-50" priority />
+            <Image src={heroImage} alt={title} fill className={`object-cover opacity-50 ${imagePosition}`} priority />
           </div>
         )}
         <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/85 from-30% to-gray-950/20" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-[#A05014] text-xs font-semibold uppercase tracking-widest mb-4">
-            OSHA-Compliant Training
+            {t.serviceLayout.badge}
           </div>
           <h1 className="text-5xl md:text-7xl font-extrabold text-white uppercase tracking-tight mb-6">{title}</h1>
           <p className="text-gray-300 text-xl max-w-2xl">{subtitle}</p>
           {comingSoon && !hideBadge && (
             <div className="inline-block bg-gray-800 border border-gray-700 text-gray-300 text-sm px-4 py-2 rounded-full mt-6">
-              Coming Soon — <a href="tel:5036800359" className="text-[#A05014] hover:underline">Call us</a> to get on the list
+              {t.serviceLayout.comingSoonPrefix}<a href="tel:5036800359" className="text-[#A05014] hover:underline">{t.serviceLayout.callUs}</a>{t.serviceLayout.comingSoonSuffix}
             </div>
           )}
         </div>
@@ -61,12 +63,12 @@ export default function ServicePageLayout({
             {/* Left: text */}
             <div>
               <section className="mb-12">
-                <h2 className="text-3xl font-extrabold text-gray-900 uppercase tracking-tight mb-5">What It Is</h2>
+                <h2 className="text-3xl font-extrabold text-gray-900 uppercase tracking-tight mb-5">{t.serviceLayout.whatItIs}</h2>
                 <p className="text-gray-600 text-lg leading-relaxed">{description}</p>
               </section>
 
               <section className="mb-10">
-                <h2 className="text-3xl font-extrabold text-gray-900 uppercase tracking-tight mb-6">What You Get</h2>
+                <h2 className="text-3xl font-extrabold text-gray-900 uppercase tracking-tight mb-6">{t.serviceLayout.whatYouGet}</h2>
                 <ul className="space-y-4">
                   {whatYouGet.map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
@@ -132,7 +134,7 @@ export default function ServicePageLayout({
             {/* Right: photo */}
             {heroImage && (
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-gray-200 shadow-xl lg:sticky lg:top-28">
-                <Image src={heroImage} alt={title} fill className="object-cover" />
+                <Image src={heroImage} alt={title} fill className={`object-cover ${imagePosition}`} />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-950/40 to-transparent" />
               </div>
             )}

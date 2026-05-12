@@ -15,6 +15,7 @@ interface ServicePageLayoutProps {
   hideBadge?: boolean;
   bookingSlug?: string;
   heroImage?: string;
+  heroBackground?: string;
   imagePosition?: string;
 }
 
@@ -28,6 +29,7 @@ export default function ServicePageLayout({
   hideBadge,
   bookingSlug,
   heroImage,
+  heroBackground,
   imagePosition = 'object-center',
 }: ServicePageLayoutProps) {
   const { t } = useLang();
@@ -36,9 +38,9 @@ export default function ServicePageLayout({
     <>
       {/* Hero — keep dark for drama */}
       <section className="relative bg-gray-950 py-28 border-b border-gray-800 overflow-hidden">
-        {heroImage && (
+        {(heroBackground || heroImage) && (
           <div className="absolute inset-0">
-            <Image src={heroImage} alt={title} fill className={`object-cover opacity-50 ${imagePosition}`} priority />
+            <Image src={heroBackground || heroImage!} alt={title} fill className={`object-cover opacity-50 ${imagePosition}`} priority />
           </div>
         )}
         <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/85 from-30% to-gray-950/20" />

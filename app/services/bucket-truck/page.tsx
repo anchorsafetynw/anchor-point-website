@@ -14,7 +14,7 @@ export default function BucketTruckPage() {
       whatYouGet={p.whatYouGet}
       bookingSlug="bucket-truck"
       heroImage="/images/pages/bucket-truck.jpg"
-      imagePosition="object-top"
+      heroBackground="/images/pages/bucket-truck-hero.jpg"
     />
   );
 }

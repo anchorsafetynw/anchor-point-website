@@ -28,7 +28,7 @@ export const translations = {
     },
     services: {
       title: 'Warehouse, Construction, and Logistics Safety',
-      subtitle: 'Dedicated safety training tailored to your work environment. From small business operations to high-volume forklift operations.',
+      subtitle: 'Dedicated safety training tailored to your work environment. From single individuals to high-volume forklift operations.',
       cta: 'Explore Services',
       items: [
         { name: 'PIT – Forklift', slug: 'forklift' },

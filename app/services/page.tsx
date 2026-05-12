@@ -70,7 +70,7 @@ export default function ServicesPage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/85 to-gray-950/50" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-[#C2410C] text-sm font-semibold uppercase tracking-widest mb-4">Our Training Programs</div>
+          <div className="text-[#A05014] text-sm font-semibold uppercase tracking-widest mb-4">Our Training Programs</div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">{t.services.title}</h1>
           <p className="text-gray-400 text-xl max-w-2xl">{t.services.subtitle}</p>
         </div>
@@ -83,10 +83,10 @@ export default function ServicesPage() {
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="group bg-gray-900 border border-gray-800 hover:border-[#C2410C]/50 rounded-xl p-8 transition-all"
+                className="group bg-gray-900 border border-gray-800 hover:border-[#A05014]/50 rounded-xl p-8 transition-all"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <h2 className="text-xl font-bold text-white group-hover:text-[#C2410C] transition-colors">
+                  <h2 className="text-xl font-bold text-white group-hover:text-[#A05014] transition-colors">
                     {service.name}
                   </h2>
                   {service.comingSoon && (
@@ -98,13 +98,9 @@ export default function ServicesPage() {
                 <p className="text-gray-400 mb-6">{service.description}</p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2 text-sm text-gray-500">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    {service.time}
-                    {service.booking && <span className="text-[#C2410C] ml-2">• Online booking available</span>}
+                    {service.booking && <span className="text-[#A05014]">• Online booking available</span>}
                   </div>
-                  <svg className="w-5 h-5 text-gray-600 group-hover:text-[#C2410C] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-gray-600 group-hover:text-[#A05014] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>

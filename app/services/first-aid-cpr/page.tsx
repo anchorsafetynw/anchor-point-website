@@ -14,6 +14,7 @@ export default function FirstAidCPRPage() {
         'Compliance documentation delivered same-day',
       ]}
       comingSoon={true}
+      hideBadge={true}
       bookingSlug="first-aid-cpr"
       heroImage="/images/pages/first-aid.jpg"
     />

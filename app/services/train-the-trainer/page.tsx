@@ -15,6 +15,7 @@ export default function TrainTheTrainerPage() {
         'OSHA-compliant documentation and processes',
       ]}
       comingSoon={true}
+      hideBadge={true}
       bookingSlug="train-the-trainer"
       heroImage="/images/pages/train-trainer.jpg"
     />

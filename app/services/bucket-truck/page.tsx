@@ -13,7 +13,6 @@ export default function BucketTruckPage() {
         'Hands-on practical evaluation for bucket truck',
         'Compliance documentation delivered same-day',
       ]}
-      reservationType="4-hour reservation window. Available on-site across the PNW."
       bookingSlug="bucket-truck"
       heroImage="/images/pages/bucket-truck.jpg"
     />

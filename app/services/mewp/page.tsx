@@ -13,7 +13,6 @@ export default function MEWPPage() {
         'In-class training followed by hands-on practical evaluation',
         'Compliance documentation delivered same-day',
       ]}
-      reservationType="4-hour reservation (one lift type) or 6-hour reservation (combo). Available on-site across the PNW."
       bookingSlug="mewp"
       heroImage="/images/pages/mewp.webp"
     />

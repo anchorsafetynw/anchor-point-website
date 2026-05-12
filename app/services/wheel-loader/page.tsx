@@ -13,7 +13,6 @@ export default function WheelLoaderPage() {
         'Hands-on practical evaluation for loader',
         'Compliance documentation delivered same-day',
       ]}
-      reservationType="4-hour reservation window. Available on-site across the PNW."
       bookingSlug="wheel-loader"
       heroImage="/images/pages/wheel-loader.jpg"
     />

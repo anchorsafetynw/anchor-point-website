@@ -13,7 +13,6 @@ export default function ForkliftPage() {
         'In-class training, followed by hands-on evaluation for forklift classes 1, 2, 3, 4, 5, 7.',
         'Compliance documentation delivered same-day',
       ]}
-      reservationType="4-hour reservation window. Available on-site PNW or at our locations."
       bookingSlug="forklift"
       heroImage="/images/pages/forklift.jpg"
     />

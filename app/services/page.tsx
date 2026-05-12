@@ -40,7 +40,7 @@ const services = [
     description: 'Adult CPR, First Aid, and AED instruction with real-world emergency scenario practice.',
     time: 'TBD',
     booking: false,
-    comingSoon: true,
+    comingSoon: false,
   },
   {
     slug: 'fall-protection',

@@ -13,7 +13,7 @@ export default function FirstAidCPRPage() {
         'Hands-on practice with real-world emergency scenarios',
         'Compliance documentation delivered same-day',
       ]}
-      comingSoon={true}
+      comingSoon={false}
       hideBadge={true}
       bookingSlug="first-aid-cpr"
       heroImage="/images/pages/first-aid.jpg"
